@@ -44,6 +44,12 @@ right_down={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Paddle"
+2d_physics/layer_2="Walls"
+2d_physics/layer_3="Ball"
+
 [rendering]
 
 renderer/rendering_method="mobile"

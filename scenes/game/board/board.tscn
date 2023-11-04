@@ -14,20 +14,16 @@ centered = false
 [node name="Walls" type="Node" parent="."]
 
 [node name="Left" parent="Walls" instance=ExtResource("2_ny8y5")]
-position = Vector2(0, 100)
-centered = false
+position = Vector2(10, 590)
 
 [node name="Right" parent="Walls" instance=ExtResource("2_ny8y5")]
-position = Vector2(1900, 100)
-centered = false
+position = Vector2(1910, 590)
 
 [node name="Top" parent="Walls" instance=ExtResource("3_j2qem")]
-position = Vector2(0, 100)
-centered = false
+position = Vector2(960, 110)
 
 [node name="Bottom" parent="Walls" instance=ExtResource("3_j2qem")]
-position = Vector2(0, 1060)
-centered = false
+position = Vector2(960, 1070)
 
 [node name="Divider" type="Node2D" parent="."]
 

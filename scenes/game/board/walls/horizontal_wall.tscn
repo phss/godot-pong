@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2427sfa5oa7x"]
+[gd_scene load_steps=3 format=3 uid="uid://c2427sfa5oa7x"]
 
 [ext_resource type="Texture2D" uid="uid://cl4cthegk677o" path="res://assets/images/horizontal_wall.png" id="1_sfvd4"]
 
-[node name="Horizontal Wall" type="Sprite2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l56o0"]
+size = Vector2(1920, 20)
+
+[node name="Horizontal Wall" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l56o0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_sfvd4")
