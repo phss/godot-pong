@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfv6ag3gwdu3l"]
+
+[ext_resource type="Script" path="res://scenes/game/controllers/human_player.gd" id="1_dhvoy"]
+
+[node name="Human Player" type="Node2D"]
+script = ExtResource("1_dhvoy")

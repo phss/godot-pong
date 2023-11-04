@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cyqqnf421iwau"]
+[gd_scene load_steps=4 format=3 uid="uid://cyqqnf421iwau"]
 
 [ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://scenes/game/board/board.tscn" id="1_ovxdd"]
 [ext_resource type="PackedScene" uid="uid://bvw28natcakmd" path="res://scenes/game/paddle/paddle.tscn" id="2_5oiq8"]
+[ext_resource type="PackedScene" uid="uid://cfv6ag3gwdu3l" path="res://scenes/game/controllers/human_player.tscn" id="3_ecijc"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,9 +11,16 @@
 [node name="Paddles" type="Node2D" parent="."]
 
 [node name="Left" parent="Paddles" instance=ExtResource("2_5oiq8")]
-centered = false
-offset = Vector2(50, 510)
+position = Vector2(70, 590)
+speed = 500
 
 [node name="Right" parent="Paddles" instance=ExtResource("2_5oiq8")]
-centered = false
-offset = Vector2(1830, 510)
+position = Vector2(1850, 590)
+speed = 500
+
+[node name="Controllers" type="Node2D" parent="."]
+
+[node name="Left Human Player" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
+up_input = &"left_up"
+down_input = &"left_down"
+paddle = NodePath("../../Paddles/Left")
