@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtj47wchb5fff"]
+
+[ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://assets/images/background.png" id="1_1wam2"]
+[ext_resource type="PackedScene" uid="uid://bx4v31xb0pou0" path="res://scenes/game/board/walls/vertical_wall.tscn" id="2_ny8y5"]
+[ext_resource type="PackedScene" uid="uid://c2427sfa5oa7x" path="res://scenes/game/board/walls/horizontal_wall.tscn" id="3_j2qem"]
+
+[node name="Board" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_1wam2")
+centered = false
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="Left" parent="Walls" instance=ExtResource("2_ny8y5")]
+position = Vector2(0, 100)
+centered = false
+
+[node name="Right" parent="Walls" instance=ExtResource("2_ny8y5")]
+position = Vector2(1900, 100)
+centered = false
+
+[node name="Top" parent="Walls" instance=ExtResource("3_j2qem")]
+position = Vector2(0, 100)
+centered = false
+
+[node name="Bottom" parent="Walls" instance=ExtResource("3_j2qem")]
+position = Vector2(0, 1060)
+centered = false

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx4v31xb0pou0"]
+
+[ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://assets/images/vertical_wall.png" id="1_jvegj"]
+
+[node name="Vertical Wall" type="Sprite2D"]
+texture = ExtResource("1_jvegj")
