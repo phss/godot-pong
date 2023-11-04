@@ -24,3 +24,8 @@ speed = 500
 up_input = &"left_up"
 down_input = &"left_down"
 paddle = NodePath("../../Paddles/Left")
+
+[node name="Right Human Player2" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
+up_input = &"right_up"
+down_input = &"right_down"
+paddle = NodePath("../../Paddles/Right")
