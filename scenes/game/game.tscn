@@ -1,7 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyqqnf421iwau"]
+[gd_scene load_steps=3 format=3 uid="uid://cyqqnf421iwau"]
 
 [ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://scenes/game/board/board.tscn" id="1_ovxdd"]
+[ext_resource type="PackedScene" uid="uid://bvw28natcakmd" path="res://scenes/game/paddle/paddle.tscn" id="2_5oiq8"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Board" parent="." instance=ExtResource("1_ovxdd")]
+
+[node name="Paddles" type="Node2D" parent="."]
+
+[node name="Left" parent="Paddles" instance=ExtResource("2_5oiq8")]
+centered = false
+offset = Vector2(50, 510)
+
+[node name="Right" parent="Paddles" instance=ExtResource("2_5oiq8")]
+centered = false
+offset = Vector2(1830, 510)
