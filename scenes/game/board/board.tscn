@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtj47wchb5fff"]
+[gd_scene load_steps=5 format=3 uid="uid://dtj47wchb5fff"]
 
 [ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://assets/images/background.png" id="1_1wam2"]
 [ext_resource type="PackedScene" uid="uid://bx4v31xb0pou0" path="res://scenes/game/board/walls/vertical_wall.tscn" id="2_ny8y5"]
 [ext_resource type="PackedScene" uid="uid://c2427sfa5oa7x" path="res://scenes/game/board/walls/horizontal_wall.tscn" id="3_j2qem"]
+[ext_resource type="PackedScene" uid="uid://c0y1netbdh81q" path="res://scenes/game/board/divider/segment.tscn" id="4_l7r3q"]
 
 [node name="Board" type="Node2D"]
 
@@ -27,3 +28,53 @@ centered = false
 [node name="Bottom" parent="Walls" instance=ExtResource("3_j2qem")]
 position = Vector2(0, 1060)
 centered = false
+
+[node name="Divider" type="Node2D" parent="."]
+
+[node name="Segment" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 140)
+
+[node name="Segment2" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 200)
+
+[node name="Segment3" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 260)
+
+[node name="Segment4" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 320)
+
+[node name="Segment5" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 380)
+
+[node name="Segment6" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 440)
+
+[node name="Segment7" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 500)
+
+[node name="Segment8" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 560)
+
+[node name="Segment9" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 620)
+
+[node name="Segment10" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 680)
+
+[node name="Segment11" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 740)
+
+[node name="Segment12" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 800)
+
+[node name="Segment13" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 860)
+
+[node name="Segment14" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 920)
+
+[node name="Segment15" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 980)
+
+[node name="Segment16" parent="Divider" instance=ExtResource("4_l7r3q")]
+position = Vector2(950, 1040)

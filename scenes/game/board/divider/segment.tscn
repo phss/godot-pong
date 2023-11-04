@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0y1netbdh81q"]
+
+[ext_resource type="Texture2D" uid="uid://cycq2wsu8gb2c" path="res://assets/images/divider_segment.png" id="1_kk6wx"]
+
+[node name="Segment" type="Sprite2D"]
+texture = ExtResource("1_kk6wx")
