@@ -25,6 +25,9 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 	
 	if return_vector.y == 0:
 		# Hit the side of the paddle
+		$GlowSprite.glow(color)
+		Colors.current_paddle_color = color
+		
 		var random_angle_adjust = randf_range(-max_random_angle_adjust, max_random_angle_adjust)
 		var angle = (ball.global_position.y - global_position.y + random_angle_adjust) / height_to_angle_ration
 		
@@ -34,5 +37,3 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 		# Hit the top/bottom of the paddle
 		ball.direction = ball.direction.bounce(collision.get_normal())
 		
-	$GlowSprite.glow(color)
-	Colors.current_paddle_color = color
