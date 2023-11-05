@@ -5,6 +5,7 @@ const height_to_angle_ration: float = 1.4
 const max_random_angle_adjust: float = 10.0
 const ball_speed_increase: float = 1.05
 
+@export var color: Color
 @export var speed: float = 1000
 @onready var height: float = $Sprite2D.texture.get_height()
 var vertical_movement: float
@@ -32,3 +33,8 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 	else:
 		# Hit the top/bottom of the paddle
 		ball.direction = ball.direction.bounce(collision.get_normal())
+		
+		
+	var tween = create_tween()
+	tween.tween_property($Sprite2D, "modulate", color, 0.3).set_trans(Tween.TRANS_QUAD)
+	tween.tween_property($Sprite2D, "modulate", $Sprite2D.modulate, 0.2)
