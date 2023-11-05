@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtj47wchb5fff"]
+[gd_scene load_steps=6 format=3 uid="uid://dtj47wchb5fff"]
 
 [ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://assets/images/background.png" id="1_1wam2"]
+[ext_resource type="Script" path="res://scenes/game/board/board.gd" id="1_vmbgd"]
 [ext_resource type="PackedScene" uid="uid://bx4v31xb0pou0" path="res://scenes/game/board/walls/vertical_wall.tscn" id="2_ny8y5"]
 [ext_resource type="PackedScene" uid="uid://c2427sfa5oa7x" path="res://scenes/game/board/walls/horizontal_wall.tscn" id="3_j2qem"]
 [ext_resource type="PackedScene" uid="uid://c0y1netbdh81q" path="res://scenes/game/board/divider/segment.tscn" id="4_l7r3q"]
 
 [node name="Board" type="Node2D"]
+script = ExtResource("1_vmbgd")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_1wam2")
@@ -13,16 +15,18 @@ centered = false
 
 [node name="Walls" type="Node" parent="."]
 
-[node name="Left" parent="Walls" instance=ExtResource("2_ny8y5")]
+[node name="Left Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(10, 590)
+direction = Vector2(-1, 0)
 
-[node name="Right" parent="Walls" instance=ExtResource("2_ny8y5")]
+[node name="Right Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(1910, 590)
+direction = Vector2(1, 0)
 
-[node name="Top" parent="Walls" instance=ExtResource("3_j2qem")]
+[node name="Top Wall" parent="Walls" instance=ExtResource("3_j2qem")]
 position = Vector2(960, 110)
 
-[node name="Bottom" parent="Walls" instance=ExtResource("3_j2qem")]
+[node name="Bottom Wall" parent="Walls" instance=ExtResource("3_j2qem")]
 position = Vector2(960, 1070)
 
 [node name="Divider" type="Node2D" parent="."]
@@ -74,3 +78,6 @@ position = Vector2(950, 980)
 
 [node name="Segment16" parent="Divider" instance=ExtResource("4_l7r3q")]
 position = Vector2(950, 1040)
+
+[connection signal="goal_scored" from="Walls/Left Goal" to="." method="_on_goal_scored_on_left"]
+[connection signal="goal_scored" from="Walls/Right Goal" to="." method="_on_goal_scored_on_right"]

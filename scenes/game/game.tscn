@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyqqnf421iwau"]
+[gd_scene load_steps=7 format=3 uid="uid://cyqqnf421iwau"]
 
+[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_f34oq"]
 [ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://scenes/game/board/board.tscn" id="1_ovxdd"]
 [ext_resource type="PackedScene" uid="uid://bvw28natcakmd" path="res://scenes/game/paddle/paddle.tscn" id="2_5oiq8"]
 [ext_resource type="PackedScene" uid="uid://cfv6ag3gwdu3l" path="res://scenes/game/controllers/human_player.tscn" id="3_ecijc"]
@@ -7,6 +8,7 @@
 [ext_resource type="Theme" uid="uid://b8f5ydgdb2f37" path="res://scenes/font.tres" id="5_ryynu"]
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_f34oq")
 
 [node name="Board" parent="." instance=ExtResource("1_ovxdd")]
 
@@ -42,3 +44,5 @@ theme_override_font_sizes/font_size = 50
 text = "Testing font 0 1 2 3"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="goal_scored" from="Board" to="." method="_on_goal_scored"]
