@@ -10,7 +10,7 @@ const ball_speed_increase: float = 1.05
 var vertical_movement: float
 
 
-func _process(_delta):
+func _physics_process(delta):
 	velocity = Vector2(0, vertical_movement) * speed
 	move_and_slide()
 	
