@@ -11,4 +11,5 @@ func _on_goal_scored(goal: Goal, ball: Ball):
 	else:
 		left_player_score += 1
 		
+	$UI.update_scores(left_player_score, right_player_score)
 	ball.reset(goal.direction)
