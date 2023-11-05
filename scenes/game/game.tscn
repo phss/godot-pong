@@ -19,11 +19,9 @@ script = ExtResource("1_f34oq")
 
 [node name="Left" parent="Paddles" instance=ExtResource("2_5oiq8")]
 position = Vector2(70, 590)
-color = Color(1, 0, 0, 1)
 
 [node name="Right" parent="Paddles" instance=ExtResource("2_5oiq8")]
 position = Vector2(1850, 590)
-color = Color(0.0392157, 0.27451, 1, 1)
 
 [node name="Controllers" type="Node2D" parent="."]
 

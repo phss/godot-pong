@@ -1,12 +1,17 @@
 extends Node2D
 
-
+@export var left_player_color: Color = Color.CRIMSON
 var left_player_score: int = 0
+
+@export var right_player_color: Color = Color.ROYAL_BLUE
 var right_player_score: int = 0
 
 
 func _ready():
 	$"Controllers/Right Human Player".set_process(false)
+	$Paddles/Left.color = left_player_color
+	$Paddles/Right.color = right_player_color
+	Colors.current_paddle_color = right_player_color
 
 
 func _on_goal_scored(goal: Goal, ball: Ball):

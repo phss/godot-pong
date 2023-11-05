@@ -7,7 +7,6 @@
 script = ExtResource("1_n32ce")
 
 [node name="Left Score" type="Label" parent="."]
-anchors_preset = -1
 offset_top = 10.0
 offset_right = 609.0
 offset_bottom = 93.0
@@ -21,7 +20,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Right Score" type="Label" parent="."]
-anchors_preset = -1
+anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -609.0

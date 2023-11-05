@@ -5,10 +5,10 @@ const height_to_angle_ration: float = 1.4
 const max_random_angle_adjust: float = 10.0
 const ball_speed_increase: float = 1.05
 
-@export var color: Color
 @export var speed: float = 1000
 @onready var height: float = $GlowSprite.texture.get_height()
 var vertical_movement: float
+var color: Color
 
 
 func _physics_process(_delta):
@@ -35,3 +35,4 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 		ball.direction = ball.direction.bounce(collision.get_normal())
 		
 	$GlowSprite.glow(color)
+	Colors.current_paddle_color = color
