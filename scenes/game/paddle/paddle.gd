@@ -3,6 +3,7 @@ class_name Paddle
 
 const height_to_angle_ration: float = 1.4
 const max_random_angle_adjust: float = 10.0
+const ball_speed_increase: float = 1.05
 
 @export var speed: int = 500
 @onready var height: float = $Sprite2D.texture.get_height()
@@ -27,6 +28,7 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 		var angle = (ball.global_position.y - global_position.y + random_angle_adjust) / height_to_angle_ration
 		
 		ball.direction = return_vector.rotated(deg_to_rad(angle * return_vector.x))	
+		ball.speed *= ball_speed_increase
 	else:
 		# Hit the top/bottom of the paddle
 		ball.direction = ball.direction.bounce(collision.get_normal())
