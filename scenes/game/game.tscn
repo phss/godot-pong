@@ -14,11 +14,9 @@
 
 [node name="Left" parent="Paddles" instance=ExtResource("2_5oiq8")]
 position = Vector2(70, 590)
-speed = 1000
 
 [node name="Right" parent="Paddles" instance=ExtResource("2_5oiq8")]
 position = Vector2(1850, 590)
-speed = 1000
 
 [node name="Controllers" type="Node2D" parent="."]
 
@@ -33,8 +31,7 @@ down_input = &"right_down"
 paddle = NodePath("../../Paddles/Right")
 
 [node name="Ball" parent="." instance=ExtResource("4_qqabx")]
-position = Vector2(781, 590)
-speed = 800
+position = Vector2(950, 590)
 
 [node name="Label" type="Label" parent="."]
 offset_right = 131.0

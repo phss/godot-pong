@@ -5,7 +5,7 @@ const height_to_angle_ration: float = 1.4
 const max_random_angle_adjust: float = 10.0
 const ball_speed_increase: float = 1.05
 
-@export var speed: int = 500
+@export var speed: float = 500
 @onready var height: float = $Sprite2D.texture.get_height()
 var vertical_movement: float
 
