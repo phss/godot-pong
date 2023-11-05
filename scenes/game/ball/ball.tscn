@@ -16,3 +16,8 @@ shape = SubResource("RectangleShape2D_pe42a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_we070")
+
+[node name="ResetTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ResetTimer" to="." method="_on_reset_timer_timeout"]
