@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b8f5ydgdb2f37"]
+
+[ext_resource type="FontFile" uid="uid://cws1c3bdv2kse" path="res://assets/fonts/computer-speak/Computer Speak v0.3.ttf" id="1_t4f7t"]
+
+[resource]
+default_font = ExtResource("1_t4f7t")
+default_font_size = 40
