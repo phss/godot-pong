@@ -11,7 +11,7 @@ func _ready():
 	$"Controllers/Right Human Player".set_process(false)
 	$Paddles/Left.color = left_player_color
 	$Paddles/Right.color = right_player_color
-	Colors.current_paddle_color = right_player_color
+	Colors.current_paddle_color = Color.BLACK
 
 
 func _on_goal_scored(goal: Goal, ball: Ball):
