@@ -17,10 +17,12 @@ centered = false
 
 [node name="Left Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(10, 590)
+color = Color(0.0375193, 0.275378, 1, 1)
 direction = Vector2(-1, 0)
 
 [node name="Right Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(1910, 590)
+color = Color(1, 0, 0, 1)
 direction = Vector2(1, 0)
 
 [node name="Top Wall" parent="Walls" instance=ExtResource("3_j2qem")]

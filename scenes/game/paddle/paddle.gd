@@ -7,11 +7,11 @@ const ball_speed_increase: float = 1.05
 
 @export var color: Color
 @export var speed: float = 1000
-@onready var height: float = $Sprite2D.texture.get_height()
+@onready var height: float = $GlowSprite.texture.get_height()
 var vertical_movement: float
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity = Vector2(0, vertical_movement) * speed
 	move_and_slide()
 	
@@ -34,7 +34,4 @@ func ball_hit(ball: Ball, collision: KinematicCollision2D):
 		# Hit the top/bottom of the paddle
 		ball.direction = ball.direction.bounce(collision.get_normal())
 		
-		
-	var tween = create_tween()
-	tween.tween_property($Sprite2D, "modulate", color, 0.3).set_trans(Tween.TRANS_QUAD)
-	tween.tween_property($Sprite2D, "modulate", $Sprite2D.modulate, 0.2)
+	$GlowSprite.glow(color)

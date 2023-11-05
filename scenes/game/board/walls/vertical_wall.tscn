@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bx4v31xb0pou0"]
+[gd_scene load_steps=5 format=3 uid="uid://bx4v31xb0pou0"]
 
 [ext_resource type="Script" path="res://scenes/game/board/walls/vertical_wall.gd" id="1_dhe2h"]
 [ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://assets/images/vertical_wall.png" id="1_jvegj"]
+[ext_resource type="Script" path="res://scenes/game/sprites/glow_sprite.gd" id="3_q0rso"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5pgim"]
 size = Vector2(20, 980)
@@ -14,5 +15,6 @@ script = ExtResource("1_dhe2h")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_5pgim")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="GlowSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_jvegj")
+script = ExtResource("3_q0rso")
