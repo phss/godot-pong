@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhtgw00wf3u72"
-path="res://.godot/imported/vertical_wall.png-e2a40c09dd2162be4253e90e3a4e8dd6.ctex"
+path="res://.godot/imported/goal.png-b8024c4f7ad58ea48e8ced3711459a82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/game/board/walls/vertical_wall.png"
-dest_files=["res://.godot/imported/vertical_wall.png-e2a40c09dd2162be4253e90e3a4e8dd6.ctex"]
+source_file="res://src/game/board/walls/goal.png"
+dest_files=["res://.godot/imported/goal.png-b8024c4f7ad58ea48e8ced3711459a82.ctex"]
 
 [params]
 

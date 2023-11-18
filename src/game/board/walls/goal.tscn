@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://bx4v31xb0pou0"]
 
-[ext_resource type="Script" path="res://src/game/board/walls/vertical_wall.gd" id="1_dhe2h"]
-[ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://src/game/board/walls/vertical_wall.png" id="2_fvrat"]
+[ext_resource type="Script" path="res://src/game/board/walls/goal.gd" id="1_02tmt"]
+[ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://src/game/board/walls/goal.png" id="2_tbaok"]
 [ext_resource type="Script" path="res://src/game/sprites/glow_sprite.gd" id="3_q0rso"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5pgim"]
 size = Vector2(20, 980)
 
-[node name="Vertical Wall" type="StaticBody2D"]
+[node name="Goal" type="StaticBody2D"]
 collision_layer = 2
 collision_mask = 5
-script = ExtResource("1_dhe2h")
+script = ExtResource("1_02tmt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_5pgim")
 
 [node name="GlowSprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_fvrat")
+texture = ExtResource("2_tbaok")
 script = ExtResource("3_q0rso")
