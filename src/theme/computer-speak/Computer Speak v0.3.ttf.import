@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cws1c3bdv2kse"
-path="res://.godot/imported/Computer Speak v0.3.ttf-7ae26334adf59642ff965d2ec6e9028f.fontdata"
+path="res://.godot/imported/Computer Speak v0.3.ttf-e72666a5bcf6f685de5191f5edcd1d44.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/computer-speak/Computer Speak v0.3.ttf"
-dest_files=["res://.godot/imported/Computer Speak v0.3.ttf-7ae26334adf59642ff965d2ec6e9028f.fontdata"]
+source_file="res://src/theme/computer-speak/Computer Speak v0.3.ttf"
+dest_files=["res://.godot/imported/Computer Speak v0.3.ttf-e72666a5bcf6f685de5191f5edcd1d44.fontdata"]
 
 [params]
 
