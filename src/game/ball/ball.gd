@@ -10,7 +10,7 @@ var speed: float
 var direction: Vector2
 
 
-func _ready():
+func _ready():	
 	reset(Vector2.LEFT)
 
 
@@ -21,6 +21,7 @@ func _physics_process(delta):
 
 
 func reset(initial_direction: Vector2):
+	$CollisionShape2D.disabled = true
 	speed = 0.0
 	var inital_rand_angle = randf_range(-max_random_angle_adjust, max_random_angle_adjust)
 	direction = initial_direction.rotated(deg_to_rad(inital_rand_angle))
@@ -29,4 +30,5 @@ func reset(initial_direction: Vector2):
 
 func _on_reset_timer_timeout():	
 	speed = start_speed
-	position = initial_position
+	position = initial_position + direction
+	$CollisionShape2D.disabled = false
