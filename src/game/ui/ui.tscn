@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1rswy0gvchw7"]
 
-[ext_resource type="Script" path="res://scenes/game/ui/ui.gd" id="1_n32ce"]
-[ext_resource type="Theme" uid="uid://b8f5ydgdb2f37" path="res://scenes/font.tres" id="1_r50vx"]
+[ext_resource type="Script" path="res://src/game/ui/ui.gd" id="1_n32ce"]
+[ext_resource type="Theme" uid="uid://b8f5ydgdb2f37" path="res://src/font.tres" id="1_r50vx"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_n32ce")

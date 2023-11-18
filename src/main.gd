@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var game: PackedScene = preload("res://scenes/game/game.tscn")
+var game: PackedScene = preload("res://src/game/game.tscn")
 
 
 func _ready():

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2427sfa5oa7x"]
 
-[ext_resource type="Script" path="res://scenes/game/board/walls/horizontal_wall.gd" id="1_lwl8o"]
+[ext_resource type="Script" path="res://src/game/board/walls/horizontal_wall.gd" id="1_lwl8o"]
 [ext_resource type="Texture2D" uid="uid://cl4cthegk677o" path="res://assets/images/horizontal_wall.png" id="1_sfvd4"]
-[ext_resource type="Script" path="res://scenes/game/sprites/glow_sprite.gd" id="3_wkq38"]
+[ext_resource type="Script" path="res://src/game/sprites/glow_sprite.gd" id="3_wkq38"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l56o0"]
 size = Vector2(1920, 20)

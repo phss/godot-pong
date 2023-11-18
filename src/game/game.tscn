@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://cyqqnf421iwau"]
 
-[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_f34oq"]
-[ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://scenes/game/board/board.tscn" id="1_ovxdd"]
-[ext_resource type="PackedScene" uid="uid://bvw28natcakmd" path="res://scenes/game/paddle/paddle.tscn" id="2_5oiq8"]
-[ext_resource type="PackedScene" uid="uid://cfv6ag3gwdu3l" path="res://scenes/game/controllers/human_player.tscn" id="3_ecijc"]
-[ext_resource type="PackedScene" uid="uid://du5348dvgbdcy" path="res://scenes/game/ball/ball.tscn" id="4_qqabx"]
-[ext_resource type="Script" path="res://scenes/game/controllers/tracker_ai.gd" id="6_4oywm"]
-[ext_resource type="PackedScene" uid="uid://b1rswy0gvchw7" path="res://scenes/game/ui/ui.tscn" id="7_mlxy0"]
+[ext_resource type="Script" path="res://src/game/game.gd" id="1_f34oq"]
+[ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://src/game/board/board.tscn" id="1_ovxdd"]
+[ext_resource type="PackedScene" uid="uid://bvw28natcakmd" path="res://src/game/paddle/paddle.tscn" id="2_5oiq8"]
+[ext_resource type="PackedScene" uid="uid://cfv6ag3gwdu3l" path="res://src/game/controllers/human_player.tscn" id="3_ecijc"]
+[ext_resource type="PackedScene" uid="uid://du5348dvgbdcy" path="res://src/game/ball/ball.tscn" id="4_qqabx"]
+[ext_resource type="Script" path="res://src/game/controllers/tracker_ai.gd" id="6_4oywm"]
+[ext_resource type="PackedScene" uid="uid://b1rswy0gvchw7" path="res://src/game/ui/ui.tscn" id="7_mlxy0"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_f34oq")

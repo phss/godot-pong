@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Pong"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://src/main.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
 
-Colors="*res://scenes/game/globals/colors.gd"
+Colors="*res://src/game/globals/colors.gd"
 
 [display]
 
