@@ -21,11 +21,12 @@ func move(movement: float):
 
 
 func ball_hit(ball: Ball, collision: KinematicCollision2D):
+	$GlowSprite.glow(color)
+	
 	var return_vector = collision.get_normal()
 	
 	if return_vector.y == 0:
-		# Hit the side of the paddle
-		$GlowSprite.glow(color)
+		# Hit the side of the paddle		
 		Colors.current_paddle_color = color
 		
 		var random_angle_adjust = randf_range(-max_random_angle_adjust, max_random_angle_adjust)

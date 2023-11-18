@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bx4v31xb0pou0"]
 
 [ext_resource type="Script" path="res://src/game/board/walls/vertical_wall.gd" id="1_dhe2h"]
-[ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://src/game/board/walls/vertical_wall.png" id="1_jvegj"]
+[ext_resource type="Texture2D" uid="uid://bhtgw00wf3u72" path="res://src/game/board/walls/vertical_wall.png" id="2_fvrat"]
 [ext_resource type="Script" path="res://src/game/sprites/glow_sprite.gd" id="3_q0rso"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5pgim"]
@@ -16,5 +16,5 @@ script = ExtResource("1_dhe2h")
 shape = SubResource("RectangleShape2D_5pgim")
 
 [node name="GlowSprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_jvegj")
+texture = ExtResource("2_fvrat")
 script = ExtResource("3_q0rso")
