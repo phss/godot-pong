@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" path="res://src/game/controllers/human_player.gd" id="1_dhvoy"]
 
-[node name="Human Player" type="Node2D"]
+[node name="HumanPlayer" type="Node2D"]
 script = ExtResource("1_dhvoy")

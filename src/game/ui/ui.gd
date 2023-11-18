@@ -8,11 +8,11 @@ func _ready():
 
 
 func update_left_player_score(score: int):
-	_update_score($"Left Score", score)
+	_update_score($LeftScore, score)
 
 
 func update_right_player_score(score: int):
-	_update_score($"Right Score", score)	
+	_update_score($RightScore, score)	
 
 
 func _update_score(label: Label, score: int):

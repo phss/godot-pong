@@ -15,18 +15,18 @@ centered = false
 
 [node name="Walls" type="Node" parent="."]
 
-[node name="Left Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
+[node name="LeftGoal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(10, 590)
 direction = Vector2(-1, 0)
 
-[node name="Right Goal" parent="Walls" instance=ExtResource("2_ny8y5")]
+[node name="RightGoal" parent="Walls" instance=ExtResource("2_ny8y5")]
 position = Vector2(1910, 590)
 direction = Vector2(1, 0)
 
-[node name="Top Wall" parent="Walls" instance=ExtResource("3_j2qem")]
+[node name="TopWall" parent="Walls" instance=ExtResource("3_j2qem")]
 position = Vector2(960, 110)
 
-[node name="Bottom Wall" parent="Walls" instance=ExtResource("3_j2qem")]
+[node name="BottomWall" parent="Walls" instance=ExtResource("3_j2qem")]
 position = Vector2(960, 1070)
 
 [node name="Divider" type="Node2D" parent="."]
@@ -79,5 +79,5 @@ position = Vector2(950, 980)
 [node name="Segment16" parent="Divider" instance=ExtResource("4_l7r3q")]
 position = Vector2(950, 1040)
 
-[connection signal="goal_scored" from="Walls/Left Goal" to="." method="_on_goal_scored_on_left"]
-[connection signal="goal_scored" from="Walls/Right Goal" to="." method="_on_goal_scored_on_right"]
+[connection signal="goal_scored" from="Walls/LeftGoal" to="." method="_on_goal_scored_on_left"]
+[connection signal="goal_scored" from="Walls/RightGoal" to="." method="_on_goal_scored_on_right"]

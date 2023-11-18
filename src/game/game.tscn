@@ -25,17 +25,17 @@ position = Vector2(1850, 590)
 
 [node name="Controllers" type="Node2D" parent="."]
 
-[node name="Left Human Player" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
+[node name="LeftHumanPlayer" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
 up_input = &"left_up"
 down_input = &"left_down"
 paddle = NodePath("../../Paddles/Left")
 
-[node name="Right Human Player" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
+[node name="RightHumanPlayer" parent="Controllers" node_paths=PackedStringArray("paddle") instance=ExtResource("3_ecijc")]
 up_input = &"right_up"
 down_input = &"right_down"
 paddle = NodePath("../../Paddles/Right")
 
-[node name="Tracker AI" type="Node2D" parent="Controllers" node_paths=PackedStringArray("paddle", "ball")]
+[node name="TrackerAI" type="Node2D" parent="Controllers" node_paths=PackedStringArray("paddle", "ball")]
 script = ExtResource("6_4oywm")
 paddle = NodePath("../../Paddles/Right")
 ball = NodePath("../../Ball")
