@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c00mw24u3wkb3"
-path="res://.godot/imported/background.png-e5ebdd33902457fb65ba6af20f80797b.ctex"
+uid="uid://cycq2wsu8gb2c"
+path="res://.godot/imported/divider_segment.png-e43ddef14a0e44f2a656ae89ec9f36c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/background.png"
-dest_files=["res://.godot/imported/background.png-e5ebdd33902457fb65ba6af20f80797b.ctex"]
+source_file="res://src/game/board/divider/divider_segment.png"
+dest_files=["res://.godot/imported/divider_segment.png-e43ddef14a0e44f2a656ae89ec9f36c2.ctex"]
 
 [params]
 

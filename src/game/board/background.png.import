@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl4cthegk677o"
-path="res://.godot/imported/horizontal_wall.png-95df41098d8198de2e03bb82f32027dd.ctex"
+uid="uid://c00mw24u3wkb3"
+path="res://.godot/imported/background.png-97c99e6c1e7f29de981cf241db1a07bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/horizontal_wall.png"
-dest_files=["res://.godot/imported/horizontal_wall.png-95df41098d8198de2e03bb82f32027dd.ctex"]
+source_file="res://src/game/board/background.png"
+dest_files=["res://.godot/imported/background.png-97c99e6c1e7f29de981cf241db1a07bf.ctex"]
 
 [params]
 

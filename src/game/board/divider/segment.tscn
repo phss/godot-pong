@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0y1netbdh81q"]
 
-[ext_resource type="Texture2D" uid="uid://cycq2wsu8gb2c" path="res://assets/images/divider_segment.png" id="1_kk6wx"]
+[ext_resource type="Texture2D" uid="uid://cycq2wsu8gb2c" path="res://src/game/board/divider/divider_segment.png" id="1_kk6wx"]
 [ext_resource type="Script" path="res://src/game/board/divider/segment.gd" id="1_ydbux"]
 [ext_resource type="Script" path="res://src/game/sprites/glow_sprite.gd" id="2_70gt6"]
 
