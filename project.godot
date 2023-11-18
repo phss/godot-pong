@@ -16,10 +16,6 @@ config/features=PackedStringArray("4.1", "Mobile")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
-[autoload]
-
-Colors="*res://src/globals/colors.gd"
-
 [display]
 
 window/size/viewport_width=1920
