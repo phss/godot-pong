@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnaxx5y7t00sj"]
+[gd_scene load_steps=4 format=3 uid="uid://bnaxx5y7t00sj"]
 
+[ext_resource type="Script" path="res://src/title/title.gd" id="1_jwj61"]
 [ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://src/shared/background.png" id="1_viba6"]
 [ext_resource type="Theme" uid="uid://b8f5ydgdb2f37" path="res://src/theme/font.tres" id="2_117ge"]
 
 [node name="Title" type="Node2D"]
+script = ExtResource("1_jwj61")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_viba6")
