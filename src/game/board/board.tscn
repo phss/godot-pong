@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtj47wchb5fff"]
 
-[ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://src/game/board/background.png" id="1_1wam2"]
 [ext_resource type="Script" path="res://src/game/board/board.gd" id="1_vmbgd"]
 [ext_resource type="PackedScene" uid="uid://bx4v31xb0pou0" path="res://src/game/board/walls/goal.tscn" id="2_ny8y5"]
+[ext_resource type="Texture2D" uid="uid://c00mw24u3wkb3" path="res://src/shared/background.png" id="2_yhkg5"]
 [ext_resource type="PackedScene" uid="uid://c2427sfa5oa7x" path="res://src/game/board/walls/horizontal_wall.tscn" id="3_j2qem"]
 [ext_resource type="PackedScene" uid="uid://c0y1netbdh81q" path="res://src/game/board/divider/segment.tscn" id="4_l7r3q"]
 
@@ -10,7 +10,7 @@
 script = ExtResource("1_vmbgd")
 
 [node name="Background" type="Sprite2D" parent="."]
-texture = ExtResource("1_1wam2")
+texture = ExtResource("2_yhkg5")
 centered = false
 
 [node name="Walls" type="Node" parent="."]
