@@ -6,8 +6,12 @@ var game: PackedScene = preload("res://src/game/game.tscn")
 
 
 func _ready():
-	get_tree().change_scene_to_packed(title)	
+	main_menu()
 
 
 func start_game():
 	get_tree().change_scene_to_packed(game)
+	
+	
+func main_menu():
+	get_tree().change_scene_to_packed(title)

@@ -16,3 +16,17 @@ func _process(_delta):
 			unpaused.emit()	
 		else:
 			paused.emit()
+
+
+func _on_reset_pressed():
+	unpaused.emit()
+	Main.start_game()
+
+
+func _on_main_menu_pressed():
+	unpaused.emit()
+	Main.main_menu()
+
+
+func _on_exit_pressed():
+	get_tree().quit()
