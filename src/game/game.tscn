@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cyqqnf421iwau"]
+[gd_scene load_steps=9 format=3 uid="uid://cyqqnf421iwau"]
 
 [ext_resource type="Script" path="res://src/game/game.gd" id="1_f34oq"]
 [ext_resource type="PackedScene" uid="uid://dtj47wchb5fff" path="res://src/game/board/board.tscn" id="1_ovxdd"]
@@ -7,11 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://du5348dvgbdcy" path="res://src/game/ball/ball.tscn" id="4_qqabx"]
 [ext_resource type="Script" path="res://src/game/controllers/tracker_ai.gd" id="6_4oywm"]
 [ext_resource type="PackedScene" uid="uid://b1rswy0gvchw7" path="res://src/game/ui/ui.tscn" id="7_mlxy0"]
+[ext_resource type="PackedScene" uid="uid://bu720qjhsg3fd" path="res://src/game/ui/pause_menu.tscn" id="8_8xcv7"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_f34oq")
 
-[node name="UI" parent="." instance=ExtResource("7_mlxy0")]
+[node name="Score" parent="." instance=ExtResource("7_mlxy0")]
 
 [node name="Board" parent="." instance=ExtResource("1_ovxdd")]
 
@@ -43,8 +44,14 @@ ball = NodePath("../../Ball")
 [node name="Ball" parent="." instance=ExtResource("4_qqabx")]
 position = Vector2(950, 590)
 
+[node name="PauseMenu" parent="." instance=ExtResource("8_8xcv7")]
+process_mode = 3
+visible = false
+
 [connection signal="goal_scored" from="Board" to="." method="_on_goal_scored"]
 [connection signal="on_segment_hit" from="Board" to="." method="_on_board_scenary_hit"]
 [connection signal="on_wall_hit" from="Board" to="." method="_on_board_scenary_hit"]
 [connection signal="paddle_hit" from="Paddles/Left" to="." method="_on_paddle_hit"]
 [connection signal="paddle_hit" from="Paddles/Right" to="." method="_on_paddle_hit"]
+[connection signal="paused" from="PauseMenu" to="." method="_on_paused"]
+[connection signal="unpaused" from="PauseMenu" to="." method="_on_unpaused"]

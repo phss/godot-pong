@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu720qjhsg3fd"]
+
+[ext_resource type="Script" path="res://src/game/ui/pause_menu.gd" id="1_3k48v"]
+[ext_resource type="Theme" uid="uid://b8f5ydgdb2f37" path="res://src/theme/font.tres" id="2_2jf1m"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+script = ExtResource("1_3k48v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.145098, 0.152941, 0.196078, 0.952941)
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -73.0
+offset_right = 115.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Menu"]
+layout_mode = 2
+theme = ExtResource("2_2jf1m")
+theme_override_font_sizes/font_size = 80
+text = "Pause"
+
+[node name="Reset" type="Button" parent="Menu"]
+layout_mode = 2
+theme = ExtResource("2_2jf1m")
+theme_override_font_sizes/font_size = 35
+text = "Reset"
+
+[node name="MainMenu" type="Button" parent="Menu"]
+layout_mode = 2
+theme = ExtResource("2_2jf1m")
+theme_override_font_sizes/font_size = 35
+text = "Main menu"
+
+[node name="Exit" type="Button" parent="Menu"]
+layout_mode = 2
+theme = ExtResource("2_2jf1m")
+theme_override_font_sizes/font_size = 35
+text = "Exit"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

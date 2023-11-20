@@ -15,10 +15,9 @@ func update_right_player_score(score: int, glow_color: Color = Color.BLACK):
 	_update_score($RightScore, score, glow_color)	
 
 
-func _update_score(label: Label, score: int, glow_color: Color):
-	var tween = create_tween()
-	
+func _update_score(label: Label, score: int, glow_color: Color):	
 	if glow_color != Color.BLACK:
+		var tween = create_tween()
 		tween.tween_property(label, "modulate", glow_color, 1.0).set_trans(Tween.TRANS_QUAD)
 		tween.tween_property(label, "modulate", label.modulate, 1.0)
 	
