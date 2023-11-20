@@ -54,18 +54,17 @@ offset_bottom = 37.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Start" type="Label" parent="UI/Options"]
+[node name="Start" type="Button" parent="UI/Options"]
 layout_mode = 2
 theme = ExtResource("2_117ge")
 theme_override_font_sizes/font_size = 50
 text = "Start"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="Exit" type="Label" parent="UI/Options"]
+[node name="Exit" type="Button" parent="UI/Options"]
 layout_mode = 2
 theme = ExtResource("2_117ge")
 theme_override_font_sizes/font_size = 50
 text = "Exit"
-horizontal_alignment = 1
-vertical_alignment = 1
+
+[connection signal="pressed" from="UI/Options/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="UI/Options/Exit" to="." method="_on_exit_pressed"]

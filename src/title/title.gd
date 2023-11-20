@@ -1,6 +1,13 @@
 extends Node2D
 
 
-func _process(_delta):
-	if Input.is_action_pressed("confirm"):
-		Main.start_game()
+func _ready():
+	$UI/Options/Start.grab_focus()
+
+
+func _on_start_pressed():
+	Main.start_game()
+
+
+func _on_exit_pressed():
+	get_tree().quit()
