@@ -33,6 +33,7 @@ func _on_paddle_hit(paddle: Paddle):
 
 func _on_goal_scored(goal: Goal, ball: Ball):
 	goal.glow(current_glow_color)
+	$Sounds/Score.play()
 	
 	if goal.direction == Vector2.LEFT:
 		right_player_score += 1

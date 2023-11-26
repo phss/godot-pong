@@ -18,6 +18,7 @@ func _physics_process(delta):
 	var collision = move_and_collide(direction * speed * delta)
 	if collision and "ball_hit" in collision.get_collider():
 		collision.get_collider().ball_hit(self, collision)
+		_play_random_bounce_sound()
 
 
 func reset(initial_direction: Vector2):
@@ -32,3 +33,9 @@ func _on_reset_timer_timeout():
 	speed = start_speed
 	position = initial_position + direction
 	$CollisionShape2D.disabled = false
+
+
+func _play_random_bounce_sound():
+	var random_sound: AudioStreamPlayer = $BounceSounds.get_children().pick_random()
+	random_sound.play()
+
