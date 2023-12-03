@@ -23,6 +23,10 @@ func _on_reset_pressed():
 	Main.start_game()
 
 
+func _on_options_pressed():
+	Options.show()
+	
+
 func _on_main_menu_pressed():
 	unpaused.emit()
 	Main.main_menu()

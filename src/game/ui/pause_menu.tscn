@@ -45,6 +45,12 @@ theme = ExtResource("2_2jf1m")
 theme_override_font_sizes/font_size = 35
 text = "Reset"
 
+[node name="Options" type="Button" parent="Menu"]
+layout_mode = 2
+theme = ExtResource("2_2jf1m")
+theme_override_font_sizes/font_size = 35
+text = "Options"
+
 [node name="MainMenu" type="Button" parent="Menu"]
 layout_mode = 2
 theme = ExtResource("2_2jf1m")
@@ -59,5 +65,6 @@ text = "Exit"
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="pressed" from="Menu/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="Menu/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Menu/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Menu/Exit" to="." method="_on_exit_pressed"]
