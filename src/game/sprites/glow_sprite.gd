@@ -6,6 +6,7 @@ class_name GlowSprite
 
 
 func glow(color: Color):
-	var tween = create_tween()
-	tween.tween_property(self, "modulate", color, 0.3).set_trans(Tween.TRANS_QUAD)
-	tween.tween_property(self, "modulate", initial_color, 0.2)
+	if Options.use_color:
+		var tween = create_tween()
+		tween.tween_property(self, "modulate", color, 0.3).set_trans(Tween.TRANS_QUAD)
+		tween.tween_property(self, "modulate", initial_color, 0.2)

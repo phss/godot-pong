@@ -60,6 +60,13 @@ theme = ExtResource("2_117ge")
 theme_override_font_sizes/font_size = 50
 text = "Start"
 
+[node name="Options" type="Button" parent="UI/Options"]
+layout_mode = 2
+theme = ExtResource("2_117ge")
+theme_override_font_sizes/font_size = 50
+text = "Options
+"
+
 [node name="Exit" type="Button" parent="UI/Options"]
 layout_mode = 2
 theme = ExtResource("2_117ge")
@@ -67,4 +74,5 @@ theme_override_font_sizes/font_size = 50
 text = "Exit"
 
 [connection signal="pressed" from="UI/Options/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="UI/Options/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="UI/Options/Exit" to="." method="_on_exit_pressed"]

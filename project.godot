@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Main="*res://src/main.gd"
+Options="*res://src/shared/options/options.tscn"
 
 [display]
 
