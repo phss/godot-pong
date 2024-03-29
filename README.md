@@ -2,7 +2,9 @@
 
 Yet another pong clone made with Godot.
 
-## Featurs
+Done as part of the 20 Games Challenge: https://20_games_challenge.gitlab.io/
+
+## Features
 
 - It's pong!
 - Fancy coloring when the ball hits the walls, pads and line. Can be disabled in options.
